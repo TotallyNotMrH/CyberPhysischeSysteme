@@ -11,8 +11,8 @@ DHT dht(DHT_PIN, DHTTYPE);
 LiquidCrystal_I2C lcd (0x27, 16,2);  
 
 // WLAN-Zugansdaten
-const char* ssid = "CPSLABOR";
-const char* password = "1234567890";
+const char* ssid = "AUSFUELLEN";
+const char* password = "AUSFUELLEN";
 
 WiFiClient client;
 // PubSubClient erzeugen
@@ -21,7 +21,6 @@ WiFiClient client;
 const char* MQTT_SERVER = "mqtt3.thingspeak.com";
 const long MQTT_PORT = 1883;
 
-//Thingspeak-Daten von Mattes
 
 const long THINGSPEAK_CHANNEL = ...;
 const char MQTT_USERNAME[] = "...";            
