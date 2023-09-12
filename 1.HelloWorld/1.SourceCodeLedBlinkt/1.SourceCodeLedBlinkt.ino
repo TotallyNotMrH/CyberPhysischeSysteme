@@ -1,6 +1,6 @@
 /* Die Define-Anweisung wird vor dem Kompilieren des Programms ausgeführt; sie   ersetzt alle Vorkommnisse von »PIN_LED« im Code mit der Zahl 13. */  
 #define PIN_LED 13
-
+//KOmmentar
 // Die SETUP-Funktion wird einmalig beim Start des Microcontrollers ausgeführt
 void setup() {
     
