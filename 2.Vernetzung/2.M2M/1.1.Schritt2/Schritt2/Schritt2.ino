@@ -102,7 +102,7 @@ void setup(void) {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
- 
+ //Kommentar
   // bei HTTP-Aufruf der entsprechenden URL Ausführen der Funktion ledXon/ledXoff
   server.on(F("/LED/on"), HTTP_GET, allLedOn); 
   server.on(F("/LED/off"), HTTP_GET, allLedOff); 
