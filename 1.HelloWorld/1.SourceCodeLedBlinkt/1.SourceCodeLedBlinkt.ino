@@ -1,23 +1,15 @@
-/* Die Define-Anweisung wird vor dem Kompilieren des Programms ausgeführt; sie   ersetzt alle Vorkommnisse von »PIN_LED« im Code mit der Zahl 13. */  
-#define PIN_LED 13
-//KOmmentar
-// Die SETUP-Funktion wird einmalig beim Start des Microcontrollers ausgeführt
+#define PINLED 22
+#define PINSENSOR 5
+
 void setup() {
-    
-    // definiert den Zweck eine PINs, Eingang (INPUT) oder Ausgang (OUTPUT)
-    pinMode(PIN_LED, OUTPUT);
+  
+  pinMode(PINSENSOR, INPUT);  
+  Serial.begin(9600);
 }
 
-// Die LOOP-Funktion läuft als Endlosschleife auf dem Microcontroller
 void loop() {
+  bewegungsstatus = digitalRead(bewegung);
   
-  // versetzt einen PIN in einen elektrischen Zustand, hier »Strom Ein«
-  digitalWrite(PIN_LED, HIGH);
-  // 1000 ms Verzögerung/Pause; 
-  delay(1000);
 
-  // »Strom Aus«
-  digitalWrite(PIN_LED, LOW);
-  // wieder Pause
-  delay(1000);
+
 }
