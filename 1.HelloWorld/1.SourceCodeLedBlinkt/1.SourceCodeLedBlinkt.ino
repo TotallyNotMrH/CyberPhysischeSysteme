@@ -1,6 +1,6 @@
 #define PINLED 22
 #define PINSENSOR 5
-
+//HalloWelt
 void setup() {
   
   pinMode(PINSENSOR, INPUT);  
